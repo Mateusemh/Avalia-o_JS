@@ -1,0 +1,13 @@
+populacaoA = 80000;
+populacaoB = 200000;
+crescimentoA = 0.03;
+crescimentoB = 0.015;
+anos = 0;
+while (populacaoA <= populacaoB) {
+  populacaoA = populacaoA + populacaoA * crescimentoA;
+  populacaoB = populacaoB + populacaoB * crescimentoB;
+  anos++;
+}
+console.log(
+  " Vai aer preciso estes anos para a população A passar a B: " + anos
+);
