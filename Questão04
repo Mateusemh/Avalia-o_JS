@@ -1,0 +1,19 @@
+let salario = 1000; // salario inicial
+let percentual = 0.0015; // percentual de aumento pra 1996
+
+for (let ano = 1996; ano <= 2023; ano++) {
+  salario += salario * percentual; // calcula o novo salario
+  percentual *= 2; // dobra o percentual de aumento
+}
+
+console.log("Salário atual: R$ " + salario.toFixed(2));
+
+let prompt = require("prompt-sync")({ sigint: true });
+let salarioInicial = parseFloat(
+  prompt("Digite o salário inicial do funcionário: ")
+);
+let percentual2 = 0.0015;
+for (let ano = 1996; ano <= 2023; ano++) {
+  salarioInicial += salarioInicial * percentual2;
+  percentual2 *= 2;
+}
